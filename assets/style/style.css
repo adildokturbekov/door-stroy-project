@@ -7,8 +7,7 @@
     padding: 30px 10px;
 }
 .header {
-    /* background-color: var(--dark-bc); */
-    background-color: #474747;
+    background-color: var(--dark-bc);
 }
 .header__container {
     display: flex;
@@ -38,5 +37,66 @@
 .header__logo-desc {
     font-weight: 400;
     font-size: 9px;
-    color: var(--bronzе);
+    color: var(--bronze);
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+.header__list {
+    position: relative;
+    font-weight: 400;
+    font-size: 13px;
+    padding-bottom: 4px;
+    color: var(--second-color);
+}
+.header__list::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--bronze);
+    transition: width 0.3s ease;
+}
+.header__list:hover::after {
+    width: 100%;
+}
+.header__btn-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header__btn {
+    cursor: pointer;
+    border: 1px solid var(--bronze);
+    border-radius: 3px;
+    padding: 0 24px;
+    width: 215px;
+    height: 56px;
+    background-color: var(--dark-bc);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--second-color);
+    transition: all 0.3s ease;
+    fill: var(--bronze);
+}
+.header__btn:hover {
+    background-color: var(--bronze);
+    color: var(--dark-bc);
+    fill: var(--dark-bc);
+}
+.header__btn-svg {
+    position:absolute;
+    right: 15px; 
+}
+.header__btn-svg svg path {
+  fill: var(--bronze);
+  transition: fill 0.3s ease;
+}
+.header__btn:hover ~ .header__btn-svg svg path,
+.header__btn-box:hover .header__btn-svg svg path {
+  fill: var(--dark-bc);
 }
