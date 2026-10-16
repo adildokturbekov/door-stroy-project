@@ -11,12 +11,15 @@
     background-color: var(--dark-bc);
 }
 .cooperation__header{
-    display: flex;
+    /* display: flex;
     justify-content:flex-start;
     align-items: center;
     gap: 12px;
     width: 1000px;
-    height: 15px;
+    height: 15px; */
+     display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .cooperation__label{
     font-weight: 400;
@@ -31,6 +34,7 @@
     flex-shrink: 0;
 }
 .cooperation__title{
+    max-width: 1200px;
     font-weight: 400;
     font-size: 32px;
     line-height: 135%;
@@ -75,3 +79,100 @@
     gap: 12px;
     align-items: self-start;
 }
+/* SECTION cooperation */
+
+/* Section projects */
+.projects {
+    background-color: var(--dark-bc);
+}
+.projects__title{
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 114%;
+    color: var(--light-color);
+    max-width: 550px;
+}
+.projects__content {
+   display:flex;
+   padding: 36px 0;
+}
+.projects__text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 18px;
+}
+.projects__desc-white{
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 165%;
+    color: var(--light-color);
+}
+.projects__desc{
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 165%;
+    color: #b2b5ac;
+}
+.projects__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.header__btn {
+    cursor: pointer;
+    border: 1px solid var(--bronze);
+    border-radius: 3px;
+    padding: 12px 20px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--light-color);
+    transition: all 0.3s ease;
+    fill: var(--bronze);
+}
+.header__btn:hover {
+    background-color: var(--bronze);
+    color: var(--dark-bc);
+    fill: var(--dark-bc);
+}
+.projects__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-top: 36px;
+    padding-bottom: 104px;
+}
+.projects__card {
+    width: 100%;
+    height: 418px;
+    background: #191c1a;
+
+}
+.projects__image{
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.projects__card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+}
+.projects__category{
+    font-weight: 400;
+    font-size: 10px;
+    color:var(--light-gold);
+}
+.projects__card-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 135%;
+    color: var(--light-color);
+}
+/* Section projects */
