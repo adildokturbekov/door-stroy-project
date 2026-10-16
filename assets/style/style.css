@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding: 30px 10px;
 }
+/*header*/
 .header {
     background-color: var(--dark-bc);
 }
@@ -64,39 +65,87 @@
 .header__list:hover::after {
     width: 100%;
 }
-.header__btn-box {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
+
 .header__btn {
     cursor: pointer;
     border: 1px solid var(--bronze);
     border-radius: 3px;
-    padding: 0 24px;
-    width: 215px;
-    height: 56px;
-    background-color: var(--dark-bc);
+    padding: 19.5px 24px;
+    /* width: 215px;
+    height: 56px; */
+    background-color: transparent;
     font-weight: 400;
     font-size: 14px;
-    color: var(--second-color);
+    color: var(--light-color);
     transition: all 0.3s ease;
     fill: var(--bronze);
+}
+.header__btn a {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
 }
 .header__btn:hover {
     background-color: var(--bronze);
     color: var(--dark-bc);
     fill: var(--dark-bc);
 }
-.header__btn-svg {
-    position:absolute;
-    right: 15px; 
-}
+
 .header__btn-svg svg path {
   fill: var(--bronze);
   transition: fill 0.3s ease;
 }
-.header__btn:hover ~ .header__btn-svg svg path,
-.header__btn-box:hover .header__btn-svg svg path {
+.header__btn:hover .header__btn-svg svg path {
   fill: var(--dark-bc);
 }
+/*header*/
+/*hero*/
+.hero {
+background: linear-gradient(90deg, rgba(11, 14, 13, 0.93) 0%, rgba(11, 14, 13, 0.5) 100%), 
+              url("../images/hero-backgraund_1x.webp") no-repeat center / cover;
+    padding: 76px 0;
+    
+}
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+.cooperation__header{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 12px;
+    width: 1000px;
+    height: 15px;
+}
+.cooperation__label{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--light-gold);
+}
+.cooperation__line{
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: var(--light-gold);
+    flex-shrink: 0;
+}
+.hero__title {
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 108%;
+    color: var(--light-color);
+}
+.unic {
+    color: var(--bronze);
+}
+.hero__desc {
+    max-width: 570px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 165%;
+    color: var(--light-color);
+}
+/*hero*/
