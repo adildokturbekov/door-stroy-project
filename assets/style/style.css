@@ -6,6 +6,18 @@
     margin: 0 auto;
     padding: 30px 10px;
 }
+.section__title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 114%;
+    color: var(--light-color);
+}
+.section__desc {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: var(--light-color);
+}
 /*header*/
 .header {
     background-color: var(--dark-bc);
@@ -134,6 +146,7 @@ background: linear-gradient(90deg, rgba(11, 14, 13, 0.93) 0%, rgba(11, 14, 13, 0
     flex-shrink: 0;
 }
 .hero__title {
+    max-width: 1000px;
     font-weight: 400;
     font-size: 76px;
     line-height: 108%;
@@ -193,3 +206,14 @@ background: linear-gradient(90deg, rgba(11, 14, 13, 0.93) 0%, rgba(11, 14, 13, 0
     color: var(--second-color);
 }
 /*facts*/
+/* offers */
+.offers {
+    background-color: var(--dark-bc);
+    padding: 104px 0;
+}
+.offers__unic {
+    font-size: 17px;
+    line-height: 165%;
+    color: var(--second-color);
+}
+/* offers */
