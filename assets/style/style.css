@@ -176,4 +176,33 @@
     color: var(--light-color);
 }
 /* Section projects */
-/*  */
+/* section workflow */
+.workflow{
+    background-color: #191c1a;
+    gap: 72px;
+
+}
+.workflow__content{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 72px;
+    padding: 40px 0;
+}
+.workflow__title{
+    max-width:700px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 114%;
+    color:var(--light-color);
+}
+.workflow__desc{
+    max-width: 400px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 165%;
+    color: var(--second-color);
+}
+/* section workflow */
