@@ -2,7 +2,7 @@
     font-family:var(--font-family);
 }
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 72px;
 }
@@ -179,7 +179,9 @@
 /* section workflow */
 .workflow{
     background-color: #191c1a;
-    gap: 72px;
+    padding-bottom: 104px;
+    padding-top: 104px;
+
 
 }
 .workflow__content{
@@ -204,5 +206,46 @@
     font-size: 17px;
     line-height: 165%;
     color: var(--second-color);
+}
+.workflow__cards{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+    padding: 40px 0;
+}
+.workflow__card{
+    display: grid;
+    grid-template-rows: auto minmax(54px, auto) 1fr;
+    align-content: start;
+    border-top: 1px solid var(--light-gold);
+    padding: 24px 0 0;
+    min-width: 0;
+    /* max-width: 200px; */
+    /* min-height: auto; */
+    
+}
+.workflow__card-numder{
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--light-gold);
+}
+.workflow__card-title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--light-color);
+}
+.workflow__card-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 165%;
+    color: var(--second-color);
+}
+.workflow__img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1296 / 240;
+    object-fit: cover;
+    /* aspect-ratio сохраняет соотношение сторон, а object-fit: cover позволяет заполнить область без искажения изображения */
 }
 /* section workflow */
