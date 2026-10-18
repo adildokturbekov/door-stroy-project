@@ -58,10 +58,10 @@
                 </div>
             </div>
             <div class="projects__button">
-            <button class="header__btn"><a href="#">Все направления<span class="header__btn-svg"></span>
-                <button class="header__btn"><a href="#">Жилые объекты<span class="header__btn-svg"></span>
-                    <button class="header__btn"><a href="#">Коммерческие объекты<span class="header__btn-svg"></span>
-                        <button class="header__btn"><a href="#">Промышленные объекты<span class="header__btn-svg"></span>
+            <button class="header__btn"><a href="#">Все направления<span class="header__btn-svg"></span></a></button>
+                <button class="header__btn"><a href="#">Жилые объекты<span class="header__btn-svg"></span></a></button>
+                    <button class="header__btn"><a href="#">Коммерческие объекты<span class="header__btn-svg"></span></a></button>
+                        <button class="header__btn"><a href="#">Промышленные объекты<span class="header__btn-svg"></span></a></button>
                     </div>
 
             <div class="projects__gallery">
@@ -169,6 +169,83 @@
 
         </div>
 
+    </section>
+    <section class="consultation">
+        <div class="container">
+            <div class="cooperation__header">
+                    <span class="cooperation__line"></span>
+                    <span class="cooperation__label">ОБСУДИМ ВАШ ПРОЕКТ</span>
+            </div>
+            <div class="consultation__content">
+                <div class="consultation__info">
+                    <h2 class="consultation__title">Давайте обсудим <span>ваш проект</span></h2>
+                    <p class="consultation__desc">Планируете строительство дома, коммерческого здания или отдельные работы? Расскажите о своей задаче — обсудим исходные данные и подходящий формат сотрудничества.</p>
+                    <img src="./assets/images/consultation__img1.webp" alt="" class="consultation__img">
+                </div>
+                <div class="consultation__form">
+                    <div class="consultation__form-header">
+                    <h3 class="consultation__form-title">Расскажите о проекте</h3>
+                    <p class="consultation__form-desc">Оставьте контакт и краткое описание вашей задачи.</p>
+                    </div>
+
+                    <form action="#" method="post" class="consultation__form-fields">
+                        <div class="consultation__form-row">
+                            <div class="consultation__form-group">
+                                <label for="client-name">Ваше имя *</label>
+                                <input type="text" id="client-name" name="name" placeholder="Как к вам обращаться" required>
+                            </div>
+                            <div class="consultation__form-group">
+                                <label for="client-phone">Телефон *</label>
+                                <input type="tel" id="client-phone" name="phone" placeholder="Номер для связи" required>
+                            </div>
+                        </div>
+                        <div class="consultation__form-group">
+                            <label for="object-type">Тип объекта</label>
+                            <select name="object-type" id="object-type">
+                                <option value="" selected disabled>Выберите тип объекта</option>
+                                <option value="commercial">Коммерческое здание</option>
+                                <option value="apartment">Многоквартирный дом</option>
+                                <option value="renovation">Реконструкция</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="consultation__form-group">
+                            <label for="project-stage">Стадия проекта</label>
+                            <select name="project-stage" id="project-stage">
+                                <option value="" selected disabled>Идея, проект или начало работ</option>
+                                <option value="idea">Есть идея</option>
+                                <option value="design">Есть готовый проект</option>
+                                <option value="construction">Начало строительства</option>
+                                <option value="renovation">Реконструкция или ремонт</option>
+                            </select>
+                        </div>
+                        <div class="consultation__form-group">
+                            <label for="project-description">О проекте</label>
+                            <textarea name="project-description" id="description" placeholder="Что планируете построить или обновить?" rows="5">
+
+                            </textarea>
+                        </div>
+                        <div class="consultation__form-argeement">
+                            <input type="checkbox" id="argeement" name="argeement" required>
+                            <label for="argeement">Я согласен на обработку персональных данных и ознакомлен с политикой конфиденциальности.</label>
+                        </div>
+                        <div class="consultation__form-footer">
+                            <button class="header__btn"><a href="#">Отправить заявку<span class="header__btn-svg">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.16344 11.4396L8.91685e-05 10.2763L8.65066 1.6108H1.96884L1.98375 0H11.4248V9.45597H9.7991L9.81401 2.77415L1.16344 11.4396Z" >
+                                </svg>
+                                </span>
+                                </a>
+                            </button>
+
+                                <span class="consultation__form-note"> * Обязательные поля</span>
+                                       
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </section>
     
 </body>

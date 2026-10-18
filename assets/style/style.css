@@ -249,3 +249,78 @@
     /* aspect-ratio сохраняет соотношение сторон, а object-fit: cover позволяет заполнить область без искажения изображения */
 }
 /* section workflow */
+/* section consultation */
+.consultation{
+    background-color: var(--dark-bc);
+}
+.consultation__info{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+    max-width: 550px;
+
+}
+.consultation__title{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 112%;
+    color:var(--light-color);
+}
+.consultation__title span{
+    display: block;
+    color: var(--light-gold);
+}
+.consultation__desc{
+font-weight: 400;
+font-size: 18px;
+line-height: 165%;
+color:var(--second-color);
+}
+.consultation__img{
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    aspect-ratio: 548 / 278;
+    object-fit: cover;     
+    /* aspect-ratio: 548 / 278 — задаёт пропорции изображения.
+       object-fit: cover — изображение заполняет заданную область без искажения, при необходимости обрезаясь. */
+}
+.consultation__form{
+    background-color: var( --cards-bc);
+    border: 1px solid var(--bronze);
+    padding: 36px;
+    
+    width: 100%;
+    max-width: 676px;
+    height: auto;
+}
+.consultation__form-header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.consultation__form-title{
+    font-weight: 400;
+    font-size: 28px;
+    color:var(--light-color);
+}
+.consultation__form-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color:var(--second-color);
+}
+.consultation__form-group label{
+    font-weight: 400;
+    font-size: 13px;
+    color:var(--second-color);
+}
+.consultation__form-group :is(input, select, textarea){
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color:var(--second-color);
+}
+/* section consultation */
