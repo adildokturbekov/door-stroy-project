@@ -276,3 +276,14 @@ background: linear-gradient(90deg, rgba(11, 14, 13, 0.93) 0%, rgba(11, 14, 13, 0
     background-color: var(--bronze);
 }
 /* offers */
+/* services */
+.services {
+    background-color: var(--cards-bc);
+    padding: 104px 0;
+}
+.services__container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+/* services */
