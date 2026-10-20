@@ -64,6 +64,9 @@
     padding-bottom: 4px;
     color: var(--second-color);
 }
+.header__list:hover {
+    color: var(--light-color);
+}
 .header__list::after {
     content: '';
     position: absolute;
@@ -76,6 +79,7 @@
 }
 .header__list:hover::after {
     width: 100%;
+    
 }
 
 .header__btn {
@@ -219,6 +223,7 @@ background: linear-gradient(90deg, rgba(11, 14, 13, 0.93) 0%, rgba(11, 14, 13, 0
 }
 .offers__unic-title {
     max-width: 900px;
+    padding-top: 40px;
 }
 .offers__box {
     display: flex;
@@ -281,9 +286,60 @@ background: linear-gradient(90deg, rgba(11, 14, 13, 0.93) 0%, rgba(11, 14, 13, 0
     background-color: var(--cards-bc);
     padding: 104px 0;
 }
-.services__container {
-    display: flex;
-    align-items: center;
+.section__title-unic {
+    padding: 40px;
+    max-width: 860px;
+}
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
     column-gap: 20px;
+}
+.services__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    border: 1px solid #383d35;
+    background-color: var(--dark-bc);
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.services__card-img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+.services__card:hover {
+    border-color: var(--bronze);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(213, 164, 44, 0.15);
+    transform: translateY(-8px);
+}
+.services__card:hover .services__card-img {
+    transform: scale(1.08);
+}
+.services__card:hover .services__card-title {
+    color: var(--bronze);
+    transition: color 0.3s ease;
+}
+.service__card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.services__card-title {
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 124%;
+}
+.services__card-desc {
+    font-size: 15px;
+    line-height: 165%;
+    color: var(--second-color) ;
 }
 /* services */
